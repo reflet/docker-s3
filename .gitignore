@@ -1,0 +1,3 @@
+.idea
+/docker/minio/config
+/docker/minio/data
