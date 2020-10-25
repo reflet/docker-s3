@@ -32,9 +32,11 @@ $ open http://127.0.0.1:9090/
 ## ■S3に登録したファイルについて
 下記のようにブラウザでアクセスする。
 
-例) hoge.txt
+例) hoge.txt, 150x150.png, 640x480.png
 ```
 $ open http://127.0.0.1:9090/static/hoge.txt
+$ open http://localhost:9090/static/150x150.png
+$ open http://localhost:9090/static/640x480.png
 ```
 
 ## ■その他
@@ -81,5 +83,11 @@ $ aws --profile minio --endpoint-url http://127.0.0.1:9090/ s3 ls s3://static
 $ aws --profile minio --endpoint-url http://127.0.0.1:9090/ s3 rm s3://static/hoge.txt
 delete: s3://static/hoge.txt
 ```
+
+## 参考サイト
+- https://hub.docker.com/r/minio/minio/
+- https://docs.min.io/docs/deploy-minio-on-docker-compose.html
+- https://qiita.com/daisukeArk/items/ac97665e5de7b726fa67
+- https://gist.github.com/kanolato/577d6329ea5107826c7230bab59f1f02
 
 以上
